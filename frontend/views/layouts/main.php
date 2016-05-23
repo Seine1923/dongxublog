@@ -38,7 +38,7 @@ AppAsset::register($this);
         ['label' => 'Home', 'url' => ['/site/index']],
         ['label' => 'About', 'url' => ['/site/about']],
         ['label' => 'Contact', 'url' => ['/site/contact']],
-        ['label' => '新闻管理', 'url' => ['/news/index']],
+        ['label' => '文章管理', 'url' => ['/news/index']],
     ];
 
     if (Yii::$app->user->isGuest) {

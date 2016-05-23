@@ -17,6 +17,8 @@ use Yii;
  */
 class News extends \yii\db\ActiveRecord
 {
+    const ARTICLE_ORIGINAL = 10;
+    const ARTICLE_FORWARY = 20;
     /**
      * @inheritdoc
      */
@@ -47,12 +49,24 @@ class News extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'content' => 'Content',
-            'type' => 'Type',
-            'time' => 'Time',
-            'author' => 'Author',
-            'top_level' => 'Top Level',
+            'title' => '文章标题',
+            'content' => '文章内容',
+            'type' => '文章类型',
+            'time' => '发表时间',
+            'author' => '作者',
+            'top_level' => '文章级别',
         ];
+    }
+
+    public function getArticleType() {
+        return array (self::ARTICLE_ORIGINAL=>'原创',self::ARTICLE_FORWARY=>'转载');
+    }
+
+    public function getArticleTypeLabel($type) {
+        if ($type==self::ARTICLE_ORIGINAL) {
+            return 'Original';
+        } else {
+            return 'Forward';
+        }
     }
 }
