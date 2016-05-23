@@ -39,6 +39,11 @@ return [
     ],
     'params' => $params,
     'modules' => [
+        'redactor' => [
+            'class' => 'yii\redactor\RedactorModule',
+            'uploadDir' => '@frontend/web/uploads',
+            'imageAllowExtensions'=>['jpg','png','gif']
+        ],
         'user' => [
             // following line will restrict access to admin controller from frontend application
             'as frontend' => 'dektrium\user\filters\FrontendFilter',
