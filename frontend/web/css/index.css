@@ -1,0 +1,82 @@
+.main{
+    width: 1080px;
+    margin: 10px auto;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+#myCarousel{
+    width: 510px;
+    height: 360px;
+    position: relative;
+    margin: 10px;
+}
+.carousel-caption{
+    top:235px;
+}
+.pad{
+    width: 510px;
+    height: 360px;
+    background: #fff;
+    margin: 10px;
+    padding: 20px;
+    border: solid 1px #aaa;
+    border-radius: 5px;
+}
+.pad-title{
+    color: #444;
+    background-color: #ddd;
+    font-weight: 500;
+    font-size: 26px;
+    padding:20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.news-title{
+    width:340px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display: inline-block;
+}
+.time{
+    color: #555;
+}
+.more{
+    margin-left: 350px;
+    font-size: 16px;
+}
+.friends-link{
+    background: #eee;
+    text-align: center;
+}
+.friends-link>div{
+    font-size: 12px;
+}
+.friends-link>a{
+    font-size: 12px;
+}
+.news-list>ul{
+    list-style-type: none;
+    padding: 0px;
+}
+.news-list>ul>li{
+    padding: 5px 0px;
+    border-bottom: dashed 1px #8b8b8b;
+}
+.news-list>ul>li,.news-list>ul>li>a{
+    line-height: 12px;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+}
+a:link,a:visited{
+    color: #333;
+}
+a:hover{
+    color: #777;
+}
+a:active{
+    color:#333;
+}

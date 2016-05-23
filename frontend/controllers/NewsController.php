@@ -121,4 +121,9 @@ class NewsController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+    public function actionDisplay($id)
+    {
+        return $this->render('displayArticle', ['model' => $this->findModel($id),]);
+    }
 }

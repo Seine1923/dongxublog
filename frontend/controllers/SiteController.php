@@ -214,4 +214,10 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+    public function actionArticles(){
+        $sql = "SELECT id,title,DATE_FORMAT(time,'%m-%d') as time FROM news WHERE top_level =0  ORDER BY time DESC ";
+        $latestArticles = News::findBySql($sql)->all();
+        return $this->render('articleList',['latestArticle' => $latestArticles]);
+    }
 }

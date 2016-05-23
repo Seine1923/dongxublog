@@ -1,0 +1,17 @@
+a{
+    text-decoration: none;
+}
+a:link,a:visited{
+    color: #333;
+}
+a:hover{
+    color: #555;
+}
+a:active{
+    color:#333;
+}
+.message-list{
+    padding: 30px;
+    border: 1px #bbb solid;
+    border-radius: 10px;
+}
