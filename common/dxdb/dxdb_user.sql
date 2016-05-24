@@ -16,6 +16,33 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password_hash` varchar(60) COLLATE utf8_unicode_ci NOT NULL,
+  `auth_key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `confirmed_at` int(11) DEFAULT NULL,
+  `unconfirmed_email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `blocked_at` int(11) DEFAULT NULL,
+  `registration_ip` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL,
+  `flags` int(11) NOT NULL DEFAULT '0',
+  `status` smallint(6) NOT NULL DEFAULT '10' COMMENT '状态',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_unique_email` (`email`),
+  UNIQUE KEY `user_unique_username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `user`
 --
 
@@ -34,4 +61,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-05-24 14:10:41
+-- Dump completed on 2016-05-24 14:17:49
