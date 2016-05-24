@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] ='最新文章';
                 <th>日期</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody style="background-color: #00b3ee">
             <?php foreach ($latestArticle as $line):?>
                 <tr>
                     <td><?=Html::a($line->title,['news/display','id'=>$line->id,'title'=>$line->title])?></td>

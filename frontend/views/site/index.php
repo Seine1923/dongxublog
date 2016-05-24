@@ -12,7 +12,7 @@ $this->title = '小城故事';
 <!---->
 <!--        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get start</a></p>-->
 <!--    </div>-->
-    <div class="body-content">
+    <div class="body-content" >
         <div class="row">
             <div class="col-lg-4">
                 <h2>最新公告</h2>
