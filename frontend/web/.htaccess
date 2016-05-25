@@ -1,3 +1,6 @@
+<Files *>
+Options -Indexes
+</Files>
 RewriteEngine on
 
 # If a directory or a file exists, use it directly
