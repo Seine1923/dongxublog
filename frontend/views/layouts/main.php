@@ -37,7 +37,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => '小城故事',
-        'brandUrl' => Yii::$app->homeUrl.'index.php',
+        'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse',
         ],
