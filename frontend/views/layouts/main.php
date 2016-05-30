@@ -27,7 +27,6 @@ AppAsset::register($this);
 <body>
 <div>
     <div class="Main_head">
-<!--        --><?//= Html::img('@web/images/sky.jpg', ['alt' => 'My logo','style'=>'margin-top:-20px;height:150px;width:500px;']) ?>
     </div>
 </div>
 <?php $this->beginBody() ?>
