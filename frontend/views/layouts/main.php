@@ -3,7 +3,8 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use yii\helpers\Html;
+use yii\helpers\Html;  //使用yii\helpers\Html命名空间下的Html类
+use yii\helpers\Url;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
@@ -20,18 +21,25 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+    <?=Html::cssFile('@web/css/newIndex.css')?>
     <?php $this->head() ?>
 </head>
 <body>
+<div>
+    <div class="Main_head">
+<!--        --><?//= Html::img('@web/images/sky.jpg', ['alt' => 'My logo','style'=>'margin-top:-20px;height:150px;width:500px;']) ?>
+    </div>
+</div>
 <?php $this->beginBody() ?>
 
 <div class="wrap">
+
     <?php
     NavBar::begin([
         'brandLabel' => '小城故事',
         'brandUrl' => Yii::$app->homeUrl.'index.php',
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-inverse',
         ],
     ]);
     $menuItems = [
@@ -40,16 +48,17 @@ AppAsset::register($this);
         ['label' => '关于我们', 'url' => ['/site/about']],
         ['label' => '联系我们', 'url' => ['/site/contact']],
         ['label' => '文章管理', 'url' => ['/news/index']],
+        ['label' => '权限管理', 'url' => ['/status/index']],
     ];
 
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+        $menuItems[] = ['label' => '注册', 'url' => ['/site/signup']];
+        $menuItems[] = ['label' => '登录', 'url' => ['/site/login']];
     } else {
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
+                '退出 (' . Yii::$app->user->identity->username . ')',
                 ['class' => 'btn btn-link']
             )
             . Html::endForm()

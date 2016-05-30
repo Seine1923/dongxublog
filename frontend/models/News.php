@@ -32,6 +32,12 @@ class News extends \yii\db\ActiveRecord
      */
     public function rules()
     {
+//用来定义验证规则,rules() 返回的每个规则必须是以下格式：
+//array('AttributeList', 'Validator', 'on'=>'ScenarioList', ...附加选项)
+// 其中 AttributeList（特性列表） 是需要通过此规则验证的特性列表字符串，每个特性名字由逗号分隔;
+//Validator（验证器） 指定要执行验证的种类；
+//on 参数是可选的，它指定此规则应被应用到的场景列表；
+// 附加选项是一个名值对数组，用于初始化相应验证器的属性值。
         return [
             [['title', 'content', 'type', 'author'], 'required'],
             [['content'], 'string'],
@@ -47,6 +53,7 @@ class News extends \yii\db\ActiveRecord
      */
     public function attributeLabels()
     {
+// 声明属性对于的标签名称
         return [
             'id' => 'ID',
             'title' => '文章标题',

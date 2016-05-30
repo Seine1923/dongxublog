@@ -1,0 +1,37 @@
+a,b,big,body,dd,del,div,dl,dt,em,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,li,ol,p,pre,small,span,strong,u,ul{margin:0;padding:0}
+
+body{ font-family:"微软雅黑", "宋体"}
+a{ text-decoration:none;}
+img{ border:none;}
+ul,ol{ list-style:none;}
+/*去除图片展示中的黑点*/
+
+.common_title{ width:1100px; margin:0 auto;  text-align:center; }
+.common_title h2{ font-size:20px; color:#333; font-weight:100; background:#f2f4f6; display:inline-block; padding:0 20px;}
+.common_title p{ font-size:20px; color:#00b3e1; text-transform:uppercase; line-height:1em; margin:10px 0;}
+.common_title i{ width:50px; height:1px; display:inline-block; background:#00b3e1}
+
+/*产品区域*/
+.pro{ width:100%; height:530px; background:#f2f4f6; overflow:hidden}
+.pro_title{ margin-top:75px; margin-bottom:35px;}
+.pro_con{ width:1140px; height: 300px; margin: 0 auto;}
+
+.pro_con .btn{ width:40px; height:300px; float:left; cursor:pointer;}
+/* */
+.pro_con .btn i{ display:block; width:20px; height:46px; background:url(../images/icon_bg.png) no-repeat;  margin-top:127px;}
+.pro_con .btn_l i{ background-position:0 -317px;}
+.pro_con .btn_r i{ background-position:-35px -317px; margin-left:-5px;}
+
+
+.pro_con .out{ width:1058px; height:300px; float:left; overflow:hidden;}
+.pro_con .out ul{ width:5000px;}
+.pro_con .out li{ float:left; margin-right:5px;}
+
+.pro_more{ width:226px; height:48px; border:1px solid #202524; display:block; margin:0 auto; text-align:center; line-height:48px; font-size:14px; color:#202524; position:relative; transition:0.3s; margin-top:45px;}
+.pro_more:hover{ background:#00b3e1; color:#fff; border:1px solid #00b3e1}
+
+.pro_more i{ display:block; width:6px; height:11px; background:url(../images/more_bg.png) no-repeat;  position:absolute; top:18px;left:160px; transition:left 0.3s}
+.pro_more:hover i{ background-position:left -11px; left:180px;}
+
+
+/*产品区域 end*/

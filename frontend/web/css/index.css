@@ -1,3 +1,7 @@
+/* banner */
+.mybox{
+    width:1100px; height:180px; margin:95px auto;
+}
 .main{
     width: 1080px;
     margin: 10px auto;

@@ -32,12 +32,12 @@ class SiteController extends Controller
                     [
                         'actions' => ['signup'],
                         'allow' => true,
-                        'roles' => ['?'],
+                        'roles' => ['?'],//guest(游客，没有登录的，用?表示)
                     ],
                     [
                         'actions' => ['logout'],
                         'allow' => true,
-                        'roles' => ['@'],
+                        'roles' => ['@'],//authenticated (登录了的，用@表示)
                     ],
                 ],
             ],
