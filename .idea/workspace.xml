@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33071523-e6da-4bf2-a2aa-75668d68157e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/web/css/newIndex.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/console/migrations/m130524_201442_init.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/console/migrations/m160520_111012_create_status_table.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/main-local.php" afterPath="$PROJECT_DIR$/common/config/main-local.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/dxdb/dxdb_user.sql" afterPath="$PROJECT_DIR$/common/dxdb/dxdb_user.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/User.php" afterPath="$PROJECT_DIR$/common/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/config/.gitignore" afterPath="$PROJECT_DIR$/console/config/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/config/main.php" afterPath="$PROJECT_DIR$/frontend/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/frontend/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/models/News.php" afterPath="$PROJECT_DIR$/frontend/models/News.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/layouts/main.php" afterPath="$PROJECT_DIR$/frontend/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/news/_search.php" afterPath="$PROJECT_DIR$/frontend/views/news/_search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/news/update.php" afterPath="$PROJECT_DIR$/frontend/views/news/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/news/view.php" afterPath="$PROJECT_DIR$/frontend/views/news/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/index.php" afterPath="$PROJECT_DIR$/frontend/views/site/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/signup.php" afterPath="$PROJECT_DIR$/frontend/views/site/signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/web/css/index.css" afterPath="$PROJECT_DIR$/frontend/web/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/web/css/site.css" afterPath="$PROJECT_DIR$/frontend/web/css/site.css" />
-    </list>
+    <list default="true" id="33071523-e6da-4bf2-a2aa-75668d68157e" name="Default" comment="" />
     <ignored path="dongxublog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -378,7 +358,7 @@
       <workItem from="1464491290702" duration="6839000" />
       <workItem from="1464574104038" duration="1976000" />
       <workItem from="1464582829817" duration="1756000" />
-      <workItem from="1464596140033" duration="10721000" />
+      <workItem from="1464596140033" duration="11281000" />
     </task>
     <task id="LOCAL-00001" summary="ArticleList">
       <created>1463994456413</created>
@@ -391,7 +371,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102326000" />
+    <option name="totallyTimeSpent" value="102886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1616" height="876" extended-state="1" />
