@@ -26,8 +26,13 @@ class ComposerStaticInit579a3c3c447e93205a70b35bd7397e37
             'yii\\authclient\\' => 15,
             'yii\\' => 4,
         ),
+        'r' => 
+        array (
+            'rmrevin\\yii\\fontawesome\\' => 24,
+        ),
         'd' => 
         array (
+            'dmstr\\' => 6,
             'dektrium\\user\\' => 14,
         ),
         'c' => 
@@ -85,6 +90,14 @@ class ComposerStaticInit579a3c3c447e93205a70b35bd7397e37
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
+        'rmrevin\\yii\\fontawesome\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rmrevin/yii2-fontawesome',
+        ),
+        'dmstr\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dmstr/yii2-adminlte-asset',
+        ),
         'dektrium\\user\\' => 
         array (
             0 => __DIR__ . '/..' . '/dektrium/yii2-user',
@@ -100,6 +113,13 @@ class ComposerStaticInit579a3c3c447e93205a70b35bd7397e37
     );
 
     public static $prefixesPsr0 = array (
+        'c' => 
+        array (
+            'cebe\\gravatar\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/cebe/yii2-gravatar',
+            ),
+        ),
         'H' => 
         array (
             'HTMLPurifier' => 
