@@ -10,6 +10,7 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language' => 'zh-CN',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
 //        'user' => [
@@ -25,6 +26,10 @@ return [
                 ],
             ],
         ],
+        'user' => [
+            'identityClass' => 'common\models\User',
+            'enableAutoLogin' => true,
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
@@ -35,7 +40,6 @@ return [
             'rules' => [
             ],
         ],
-
     ],
     'params' => $params,
     'modules' => [
@@ -44,9 +48,9 @@ return [
             'uploadDir' => 'uploads',
             'imageAllowExtensions'=>['jpg','png','gif']
         ],
-        'user' => [
-            // following line will restrict access to admin controller from frontend application
-            'as frontend' => 'dektrium\user\filters\FrontendFilter',
-        ],
+//        'user' => [
+//            // following line will restrict access to admin controller from frontend application
+//            'as frontend' => 'dektrium\user\filters\FrontendFilter',
+//        ],
     ],
 ];

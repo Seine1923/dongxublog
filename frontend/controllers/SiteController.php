@@ -155,6 +155,7 @@ class SiteController extends Controller
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
+                Yii::$app->getSession()->setFlash('success', '注册成功，请等待管理员审核！');
                 if (Yii::$app->getUser()->login($user)) {
                     return $this->goHome();
                 }

@@ -46,8 +46,8 @@ AppAsset::register($this);
         ['label' => '最新文章', 'url' => ['/site/articles']],
         ['label' => '关于我们', 'url' => ['/site/about']],
         ['label' => '联系我们', 'url' => ['/site/contact']],
-        ['label' => '文章管理', 'url' => ['/news/index']],
-        ['label' => '权限管理', 'url' => ['/status/index']],
+//        ['label' => '文章管理', 'url' => ['/news/index']],
+//        ['label' => '权限管理', 'url' => ['/user/index']],
     ];
 
     if (Yii::$app->user->isGuest) {

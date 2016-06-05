@@ -12,8 +12,13 @@ class SignupForm extends Model
     public $username;
     public $email;
     public $password;
+    public $groups;
 
-
+    const SIGNUPTYPE_ORGANIZATION = '文章管理';
+    const SIGNUPTYPE_PRIMARYADMIN  = '用户管理';
+    const SIGNUPTYPE_LEADER  = '权限分配';
+    const SIGNUPTYPE_COMMITTEE  = '权限管理';
+    const SIGNUPTYPE_EXPERT  = '菜单管理';
     /**
      * @inheritdoc
      */
@@ -33,6 +38,8 @@ class SignupForm extends Model
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
+            [['groups'], 'string'],
+            [['groups'], 'required'],
         ];
     }
 
@@ -52,7 +59,22 @@ class SignupForm extends Model
         $user->email = $this->email;
         $user->setPassword($this->password);
         $user->generateAuthKey();
-        
+        $user->groups = $this->groups;
         return $user->save() ? $user : null;
+    }
+
+    public function getSignupType(){
+        return array(self::SIGNUPTYPE_ORGANIZATION => '文章管理', self::SIGNUPTYPE_PRIMARYADMIN => '用户管理',
+            self::SIGNUPTYPE_LEADER => '权限分配', self::SIGNUPTYPE_COMMITTEE => '权限管理', self::SIGNUPTYPE_EXPERT => '菜单管理');
+    }
+
+    public function attributeLabels()
+    {
+        return [
+            'username' => '用户名',
+            'password' => '密码',
+            'email' => '邮箱',
+            'groups' => '所属用户组',
+        ];
     }
 }

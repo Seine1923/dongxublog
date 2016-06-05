@@ -44,7 +44,7 @@ $this->title = '小城故事';
                 <h2>最新公告</h2>
                 <ol>
                     <?php foreach($topNews as $news): ?>
-                        <li><?=Html::a($news->title)?></li>
+                        <li><?=Html::a($news->title,['news/display','id'=>$news->id,'title'=>$news->title])?></li>
                     <?php endforeach; ?>
                 </ol>
                 <p><a class="btn btn-default" href="">更多 &raquo;</a></p>
