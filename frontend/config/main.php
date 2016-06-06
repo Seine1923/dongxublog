@@ -45,7 +45,8 @@ return [
     'modules' => [
         'redactor' => [
             'class' => 'yii\redactor\RedactorModule',
-            'uploadDir' => 'uploads',
+            'uploadDir' => '@webroot/uploads',
+            'uploadUrl' => '@web/uploads',
             'imageAllowExtensions'=>['jpg','png','gif']
         ],
 //        'user' => [

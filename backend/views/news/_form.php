@@ -14,7 +14,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'content')->widget(\yii\redactor\widgets\Redactor::className(), [
+        'clientOptions' => [
+            'imageManagerJson' => ['/redactor/upload/image-json'],
+            'imageUpload' => ['/redactor/upload/image'],
+            'fileUpload' => ['/redactor/upload/file'],
+            'lang' => 'zh_cn',
+            'plugins' => ['clips', 'fontcolor','imagemanager']
+        ]
+    ])?>
 
     <?= $form->field($model, 'type')->textInput() ?>
 
