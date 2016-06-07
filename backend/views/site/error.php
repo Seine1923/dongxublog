@@ -9,6 +9,13 @@ use yii\helpers\Html;
 
 $this->title = $name;
 ?>
+
+<!--以下代码可以让错误的URL跳转到前台登录页面-->
+<?php
+if(Yii::$app->user->isGuest){}
+    header("Location: /admin");
+    exit;
+?>
 <!-- Main content -->
 <section class="content">
 
