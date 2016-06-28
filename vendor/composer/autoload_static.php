@@ -34,6 +34,12 @@ class ComposerStaticInit579a3c3c447e93205a70b35bd7397e37
         array (
             'mdm\\admin\\' => 10,
         ),
+        'k' => 
+        array (
+            'kartik\\datetime\\' => 16,
+            'kartik\\date\\' => 12,
+            'kartik\\base\\' => 12,
+        ),
         'd' => 
         array (
             'dmstr\\' => 6,
@@ -101,6 +107,18 @@ class ComposerStaticInit579a3c3c447e93205a70b35bd7397e37
         'mdm\\admin\\' => 
         array (
             0 => __DIR__ . '/..' . '/mdmsoft/yii2-admin',
+        ),
+        'kartik\\datetime\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-datetimepicker',
+        ),
+        'kartik\\date\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-datepicker',
+        ),
+        'kartik\\base\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-krajee-base',
         ),
         'dmstr\\' => 
         array (

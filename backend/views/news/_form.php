@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\datetime\DateTimePicker;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\News */
@@ -26,14 +27,22 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'type')->textInput() ?>
 
-    <?= $form->field($model, 'time')->textInput() ?>
+
+
+    <?= $form->field($model, 'time')->widget(DateTimePicker::classname(), [
+        'options' => ['placeholder' => ''],
+        'pluginOptions' => [
+            'autoclose' => true,
+            'todayHighlight' => true,
+        ]
+    ]); ?>
 
     <?= $form->field($model, 'author')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'top_level')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? '新建' : '更改', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

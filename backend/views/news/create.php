@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\News */
 
-$this->title = 'Create News';
+$this->title = '新建文章';
 $this->params['breadcrumbs'][] = ['label' => 'News', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
